@@ -1,0 +1,175 @@
+/* === Reset & Base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 80px 40px; /* Increased vertical padding */
+}
+
+.resume {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1000px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sidebar {
+  background-color: #f5f5f5;
+  padding: 30px;
+  width: 28%; /* Reduced width slightly more */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-info__avatar {
+  width: 140px; /* Increased size */
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1f9ea7;
+  align-self: center;
+  margin-bottom: 20px; /* More space below avatar */
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-info__item {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #181820;
+  gap: 10px;
+}
+
+.skills-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #5c5c62;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.skill-list {
+  list-style: none;
+  color: #5c5c62;
+  font-size: 0.9rem;
+}
+
+.skill-list li {
+  margin-bottom: 5px;
+}
+
+.main-content {
+  padding: 40px;
+  padding-left: 50px;
+  width: 72%;
+}
+
+.name-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #181820;
+  margin-bottom: 5px;
+}
+
+.role {
+  font-size: 1.1rem;
+  color: #1f9ea7;
+  margin-bottom: 20px;
+}
+
+.resume__block {
+  margin-bottom: 25px;
+}
+
+.block-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-left: 4px solid #1f9ea7;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  color: #181820;
+  background-color: #c1eff3;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 3px;
+}
+
+/* === Easter Egg / Fun Block === */
+.easter-egg {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #eafbea;
+  border-left: 4px solid #28a745;
+  border-radius: 8px;
+  font-style: italic;
+  color: #2f6627;
+  font-size: 0.95rem;
+}
+
+.easter-egg strong {
+  font-weight: bold;
+  color: #1d5022;
+}
+
+p,
+ul {
+  color: #5c5c62;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+.aligned-list {
+  padding-left: 20px;
+  list-style-position: outside;
+}
+
+.aligned-list li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .resume {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .main-content {
+    width: 100%;
+  }
+
+  .contact-info__avatar {
+    margin: 0 auto 15px auto;
+  }
+}
